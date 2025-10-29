@@ -7,25 +7,30 @@ class Solution {
 public:
     int smallestNumber(int n) {
 
+        // Loop indefinitely until we find the number with all bits set to 1
         while (true) {
             int a = n;
-            bool allOnes=true;
+            bool allOnes = true;  // Flag to check if all bits are 1
+
+            // Check each bit of 'a'
             while (a) {
-                if ((a & 1)== 0) {
-                   
-                      allOnes=false;
-                    break;
+                // If we find a 0 bit, then it's not all ones
+                if ((a & 1) == 0) {
+                    allOnes = false;
+                    break;  // No need to check remaining bits
                 }
+                // Right shift 'a' to check the next bit
                 a = a >> 1;
             }
-            if(allOnes==true){
+
+            // If all bits were 1, return the number
+            if (allOnes == true) {
                 return n;
             }
-              n++;
-           
+
+            // Otherwise, check the next number
+            n++;
         }
         return -1;
-
-     
     }
 };
