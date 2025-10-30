@@ -28,7 +28,7 @@ Sorting ensures that we always brew the easiest (lowest skill) potions first, mi
 ---
 
 ### 🔧 Solution Details:
-- **Language Used:** Python  
+- **Language Used:** Python, C, Java  
 - **Time Complexity:** O(n log n) (due to sorting)  
 - **Space Complexity:** O(n) (for storing potion pairs)  
 
@@ -39,3 +39,7 @@ Sorting ensures that we always brew the easiest (lowest skill) potions first, mi
   - Unordered input skill levels  
   - Potions with zero mana or skill  
 - Sorting + simulation is optimal and avoids unnecessary reprocessing.
+
+---
+
+✅ *Now includes fully functional implementations in **Python**, **C**, and **Java**, all following the same logic and producing consistent results.*
